@@ -1,0 +1,139 @@
+
+@import url(../fonts/ReadexPro/ReadexPro.ttf);
+@import url(../fonts/ribeye/Ribeye400.ttf);
+* {
+    box-sizing: border-box;
+
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Readex Pro', 'Ribeye', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    min-width: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.h1 {
+    font-size: 70px;
+    line-height: 95.63px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.h3 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.75px;
+    text-align: center;
+}
+
+.h4 {
+    font-size: 50px;
+    line-height: 68.3px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.h5 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.h6 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37.5px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.letter-spacing-2 {
+    letter-spacing: -0.5px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: -0.75px;
+}
+
+.letter-spacing-4 {
+    letter-spacing: -2px;
+}
+
+.letter-spacing-22 {
+    letter-spacing: 3px;
+}
+
+
+
+.btn {
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px var(--shadow);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.col {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 1200px;
+}
+
+.border-3 {
+    border: 3px solid var(--dark-yellow);
+}
