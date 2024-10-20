@@ -1,65 +1,82 @@
 @import url(./color.css);
 @import url(./common.css);
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 54px 15px 63px;
+    padding: 15px 0;
 }
 
-header .navbar-right {
+.header .navbar-right {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
 }
-header .content {
+.header .content {
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
-    
 }
 
-header .run-time {
+.header .run-time {
     font-size: 7px;
     font-weight: 400;
     line-height: 8px;
+}
 
-}
-footer {
+/* footer {
     padding: 18px 0;
-}
+} */
 
 .block-1 {
     position: relative;
     width: 100%;
 }
+
 .block-1 > img {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 150px);
 }
 
 .block-1 > div {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 55%;
+    top: 50px;
+    right: 20px;
     height: calc(100% - 162px);
-    margin: 112px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-
 
 .block-1 .row  {
     justify-content: left;
-    margin-left: 88px;
 }
 
-.block-1 > div > h5 {
-    margin-top: 40px;
+.block-1 .h3 {
+    font-size: 70px;
+}
+.block-1 .h5 {
+    font-size: 52px;
 }
 
-.block-1 > div > h3 {
-    margin-top: 30px;
+.block-1 .h5:nth-child(2) {
+    margin-left: 30px;
+}
+
+.block-1 .h5:last-of-type {
+    margin-left: 60px;
+}
+
+.block-1 .h6 {
+    margin-top: 20px;
+}
+
+.block-1 .h3, 
+.block-1 .h5, 
+.block-1 .h6 {
+    font-family: 'Hiragino Kaku Gothic Std W8';
+    text-align: left;
 }
 
 .text-shadow {
@@ -98,64 +115,59 @@ footer {
 .block-3 .container {
     padding: 85px 50px;
     gap: 1.5em;
-    width: 60%;
-}
-.block-3 p{
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 31.25px;
-    letter-spacing: -2px;
-    color: var(--blue);
+    width: 70%;
+    align-items: flex-start;
+    padding-left: 150px;
 }
 
 .block-4 {
-    padding: 70px 0 160px;
+    padding: 70px 0;
     background-image: url(../images/4.png);
     width: 100%;
     background-size: cover;
 }
-.block-4 .col .row {
-    align-items: stretch;
-}
-.block-4 .col .row .left,
-.block-4 .col .row .right {
-    display: flex;
-    align-items: first baseline;
-    flex-direction: column;
-}
 
-.block-4 .col .row .left {
-    margin-top: 30px;
+.block-4 .container {
+    width: 70%;
+    gap: 20px;
 }
-
-.block-4 .col .row .right {
-    margin-top: 600px;
+.block-4 .container .col {
+    align-items: flex-start;
 }
-
-.block-4 .col .row .left > div,
-.block-4 .col .right > div {
+.block-4 .border-2 {
+    width: 100%;
     padding: 50px;
-    margin-top: 12px;
+    padding-left: 150px;
+    gap: 1.5em;
 }
 
-.block-4 .col .row .left > h5,
-.block-4 .col .right > h5 {
-    padding-left: 50px;
-}
-.block-4 p {
-    padding: 18px 0;
-    font-size: 25px;
-    line-height: 31.25px;
-    font-weight: 400;
-    letter-spacing: -2px;
+.border-brown {
+    border: 1px solid var(--white);
 }
 
+.radio-style {
+    width: 20px;
+    height: 20px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-dot {
+    width: 10px;
+    height: 10px;   
+}
+
+.border-round {
+    border-radius: 50%;
+}
 .block-5 {
-    gap: 25px;
     padding: 70px 0 84px 0;
 }
-
-.block-5 > .row {
+.block-5 .container {
+    gap: 25px;
+}
+.block-5 > .container > .row {
     gap: 28px;
 }
 
@@ -182,12 +194,22 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
 }
 
 .block-6 .card{
-    width: 30%;
+    width: 100%;
     padding: 32px 30px;
+    gap: 30px;
+}
+.block-6 .card img,
+.block-9 .card img {
+    width: 30%;
+}
+
+.block-6 .card .col,
+.block-9 .card .col {
+    width: 70%;
 }
 .block-6 .card .h4,
 .block-6 .card p {
@@ -215,16 +237,21 @@ footer {
 .block-7 p {
     margin-top: 34px;
     width: 50%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: -2px;
+}
+
+.block-7 .container > .row {
+    column-gap: 20px;
+}
+
+.block-7 .container {
+    gap: 40px;
 }
 
 .block-8 {
     padding: 100px 0 56px 0;
     width: 100%;
 }
+
 .block-8 .container > .h5 {
     margin-top: 70px;
     padding: 21px 0;
@@ -261,7 +288,7 @@ footer {
     font-weight: 300;
     letter-spacing: -3px;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: var(--green);
     
 }
 
@@ -295,77 +322,51 @@ footer {
     padding: 100px 160px 120px 160px;
 }
 
+
 .block-9 .card {
     padding: 54px 80px;
     background-color: var(--white);
     gap: 55px;
     height: 100%;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .block-9 .card:not(:first-of-type) {
-    margin-top: 70px;
+    border-width: 0 3px 3px 3px;
 }
-
-.block-9 .card:first-of-type {
-    margin-top: 55px;
-}
-
-.block-9 .card > .col {
-    padding: 16px 0;
-    gap: 20PX;
-}
-.block-9 .card p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28.97px;
-    letter-spacing: 5px;
+.block-9  .card .row:last-child {
+    align-items: flex-start;
+    gap: 40px;
+     width: 100%;
 }
 
 .block-10 {
     padding: 90px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-
 }
 
 .block-10 > .row {
     gap: 110px;
 }
 
-
 .block-10 .font-size-p2 {
     font-weight: 700;
     letter-spacing: .3rem;
 }
 
-.map {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.map > .btn {
-    position: absolute;
-    bottom: 5em;
-    left: 13%;
-    width: 70%;
-}
-.map p {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-}
-.pos {
-    position: absolute;
-    left: calc(50% - 20px);
-    top: calc(50% - 50px);
+.block-10 .map {
+    height: 500px;
+    width: 50%;
 }
 
 .block-10 .title{
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
-    letter-spacing: 1em;
+    letter-spacing: .5em;
 }
 
 .block-10 .detail {
@@ -399,6 +400,10 @@ footer {
     gap: 25px;
 }
 
+.block-10 .btn-web {
+    width: 100%;
+    gap: 15%;
+}
 
 @media only screen and (min-width: 1440px) {
     
@@ -416,7 +421,8 @@ footer {
         padding: 30px 0;
     }
     
-    .h3 {
+    .h3,
+    .block-1 .h3 {
         font-size: 52px;
         line-height: 62px;
     }
@@ -426,19 +432,21 @@ footer {
         line-height: 55px;
     }
     
-    .h5 {
+    .h5,
+    .block-1 .h5 {
         font-size: 32px;
         line-height: 40px;
     }
     
-    .h6 {
+    .h6,
+    .block-1 .h6 {
         font-size: 26px;
         line-height: 30px;
     }
     
     .block-1 > div {
         height: calc(100% - 62px);
-        margin: 50px 0;
+        /* margin: 50px 0; */
     }
     .container {
         width: calc(100% - 100px);
@@ -451,24 +459,10 @@ footer {
         padding: 50px 0;
     }
 
-    .block-4 .col .row .right {
-        margin-top: 400px;
-    }
-
     .block-4 p {
         padding: 10px 0;
     }
 
-    .block-4 .col .row .left > div,
-    .block-4 .col .row .right > div {
-        padding: 30px;
-        margin-top: 10px;
-    }
-
-    .block-7 .condition {
-        top: .5em; 
-        left: 1em;
-    }
 
     .block-7 .h5:not(.condition),
     .block-8 .container > .h5,
@@ -529,12 +523,10 @@ footer {
     .h6 {
         font-size: 20px;
         line-height: 20px;
-    }
-    
+    }    
 
     .block-1 > div {
-        margin-top: 10%;
-        width: 100%;
+        gap: 0;     
     }
     .block-1 > img {
         height: auto;
@@ -542,41 +534,25 @@ footer {
     .block-2 .container {
         gap: 30px;
     }
-    .block-3 .container ,
+
+    .block-3 .container,
+    .block-4 .container .border-2 {
+        padding: 30px 50px;
+    } 
+
     .block-10{
         padding: 30px;
     } 
+
     [class*="block-"]:not(.block-1){
         padding: 40px 0;
     }
 
-    .block-3 p,
-    .block-4 p {
-        padding: 6px 0;
-        font-size: 18px;
-    }
-
-    .block-4 .col .row {
+    .block-4 .col {
         gap: 2em;
     }
-    .block-4 .col .row .left,
-    .block-4 .col .row .right {
-        margin-top: 30px;
-    }
-
-    .block-4 .col .row .left > div,
-    .block-4 .col .row .right > div {
-        padding: 20px;
-        margin-top: 5px;
-    }
-
     .block-5 p.content {
         font-size: 30PX;
-    }
-
-    .block-7 .condition {
-        top: .5em; 
-        left: 1em;
     }
 
     .block-7 p {
@@ -602,9 +578,17 @@ footer {
         gap: 45px;
     }
 
+    .block-10 .title{
+        
+        letter-spacing: 5px;
+    }
+
+    .block-10 .map {
+        width: 70%;
+    }
     .block-10 > .row {
-        gap: 16px;
-        margin: 30px;
+        gap: 30px;
+        margin: 30px 0;
     }
 }
 
@@ -619,7 +603,10 @@ footer {
         line-height: 45px;
         padding: 14px 0;
     }
-    
+    p {
+        font-size: 16px;
+    }
+    .block-1 .h3,
     .h3 {
         font-size: 36px;
         line-height: 42px;
@@ -630,16 +617,19 @@ footer {
         line-height: 35px;
     }
     
+    .block-1 .h5,
     .h5 {
         font-size: 20px;
-        line-height: 20px;
+        /* line-height: 20px; */
     }
     
+    .block-1 .h6,
     .h6 {
         font-size: 16px;
-        line-height: 16px;
+        /* line-height: 16px; */
     }
 
+    
     [class*="block-"]:not(.block-1){
         padding: 30px 0;
     }
@@ -648,33 +638,17 @@ footer {
         flex-direction: column;
     }
     .block-3 .container ,
+    .block-4 .container .border-2,
     .block-10{
         padding: 20px;
     } 
-    .block-3 .container {
-        padding: 10px 0;
-        gap: 0;
+
+    .block-5 > .container > .row {
+        flex-direction: column;
     }
     
-
-    .block-3 p,
-    .block-4 p {
-        padding: 6px 0;
-        font-size: 18px;
-    }
-
-    .block-4 .col .row {
-        gap: 2em;
-    }
-    .block-4 .col .row .left,
-    .block-4 .col .row .right {
-        margin-top: 30px;
-    }
-
-    .block-4 .col .row .left > div,
-    .block-4 .col .row .right > div {
-        padding: 20px;
-        margin-top: 5px;
+    .block-5 > .container > .row .btn {
+        width: 100%;
     }
 
     .block-5 p.content {
@@ -685,10 +659,6 @@ footer {
         flex-direction: column;
     }
 
-    .block-6 .container .card {
-        width: 100%;
-    }
-
     .block-6 .container > .col {
         flex-direction: row;
         gap: 20px;
@@ -696,11 +666,6 @@ footer {
     
     .block-6 .container .h5 {
         font-size: 25px;
-    }
-
-    .block-7 .condition {
-        top: .5em; 
-        left: 1em;
     }
 
     .block-7 p {
@@ -731,25 +696,24 @@ footer {
         padding: 10px;
     }
 
-
     .block-9 .card {
         padding: 30px;
         gap: 35px;
-        
     }
-
-    .block-9 .container > .row {
-        flex-direction: column;
-    }    
     
     .block-9 .container > img {
         width: 100%;
     }
 
+    
     .block-10 > .row {
         flex-direction: column;
+        gap: 20px;
     }
-
+    
+    .block-10 .title {
+        letter-spacing: 0;
+    }
     .block-10 .btn-box {
         margin-top: 30px;
     }
@@ -760,15 +724,34 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    header .navbar-right {
+    
+    .header .navbar-right {
         display: none;
     }
 
-    header {
+    .header {
         justify-content: center;
     }
 
-    .block-4 .col .row {
+    .block-1 .h3{
+        font-size: 26px;
+    }
+    
+    .block-1 .h5{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .block-1 .h6{
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .block-1 > div {
+        top: 30px;        
+    }
+
+    .block-4 .col {
         flex-direction: column;
     }
     .block-5 > .h5 {
@@ -780,6 +763,7 @@ footer {
     .block-6 .container {
         flex-direction: column;
     }
+
 
     .block-6 .container .card {
         width: 100%;
@@ -796,6 +780,36 @@ footer {
     
     .block-6 .container .h5 {
         font-size: 25px;
+    }
+
+    .block-7 .container {
+        gap: 20px;
+    }
+    .block-7 .condition {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+
+    .block-7 .h5:not(.condition) {
+        margin-top: 0;
+        padding: 22px;
+    }
+
+    .block-7 > .col > .row {
+        flex-direction: column;
+    }
+
+    .block-7 > .col > .row .right-icon {
+        transform: rotate(90deg);
+    }
+
+    .block-7 p {
+        margin-top: 0;
+        width: 100%;
     }
     /* .block-8 .row:first-of-type,
     .block-8 .row:nth-of-type(3),
@@ -824,19 +838,52 @@ footer {
         letter-spacing: 0;
         padding: 10px;
     } */
+
+    .block-9 .card img,
+    .block-9 .card .col {
+        width: 100%;
+    }
+    .block-9 .container > .row {
+        flex-direction: column-reverse;
+    }    
+    .block-10 .container {
+        width: calc(100%-100px);
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
+
+    .block-1 > div {
+        top: 20px;        
+    }
+    .block-1 .h5:first-child {
+        margin-left: 30px;
+    }
+    .block-1 .h5:nth-child(2) {
+        margin-left: 60px;
+    }
+    
+    .block-1 .h5:last-of-type {
+        margin-left: 90px;
+    }
+
     .block-6 .container {
         flex-direction: column;
     }
 
     .block-6 .container .card {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .block-6 .container .card .col {
+        padding: 0;
         width: 100%;
     }
 
     .block-6 .container .card img {
-        width: 50%;
+        width: 100%;
     }
 
     .block-6 .container > .col {
@@ -847,4 +894,10 @@ footer {
     .block-6 .container .h5 {
         font-size: 25px;
     }
+
+    .block-10 .row {
+        align-items: center;
+    }
+    
+
 }

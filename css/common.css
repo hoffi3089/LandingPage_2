@@ -1,10 +1,18 @@
 
 @import url(../fonts/ReadexPro/ReadexPro.ttf);
 @import url(../fonts/ribeye/Ribeye400.ttf);
+
+@font-face {
+    font-family: 'Hiragino Kaku Gothic Std W8';
+    src: url('../fonts/HiraginoKakuGothicStd/HiraginoKakuGothicStdW8.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
-
 }
+
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
@@ -31,6 +39,7 @@ h5,
 h6,
 p {
     margin: 0;
+    
 }
 .h1 {
     font-size: 70px;
@@ -79,6 +88,13 @@ p {
     text-align: center;
 }
 
+p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28.97px;
+    letter-spacing: 5px;
+}
+
 .letter-spacing-2 {
     letter-spacing: -0.5px;
 }
@@ -104,6 +120,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 9px;
+    cursor: pointer;
 }
 
 .box-shadow {
@@ -129,11 +146,18 @@ p {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
     max-width: 1200px;
 }
 
 .border-3 {
     border: 3px solid var(--dark-yellow);
+}
+
+.border-2 {
+    border: 2px solid var(--light-gray);
+}
+.gap-10 {
+    gap: 10px;
 }
