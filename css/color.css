@@ -1,14 +1,14 @@
 :root {
     --yellow:  #AC4800;
-    --light-yellow: rgba(255, 236, 217, 0.801);
-    --dark-yellow: #806413;
+    --light-yellow: hsl(50, 45%, 83%);
+    --dark-yellow: #e7e0bf;
     --brown: #806413;
     --dark-brown: #9D5500CC;
     --light-brown: #FF8A00CC;
     --light-gray: #E0E0E0;
     --gray: #E4E4E4;
     --dark-gray: #6D6D6D;
-    --green: #02807F;
+    --green: #4D661A;
     --blue: #181945;
     --white: white;
     --shadow: #B8B8B8;
@@ -50,9 +50,6 @@
     color: var(--yellow);
 }
 
-.text-dark-yellow {
-    color: var(--dark-yellow);
-}
 
 .text-brown {
     color: var(--brown);
